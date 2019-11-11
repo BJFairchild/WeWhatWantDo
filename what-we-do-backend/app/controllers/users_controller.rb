@@ -1,5 +1,5 @@
 class UsersController < ApplicationController
-    skip_before_action :verify_authenticity_token, if: :json_request?
+skip_before_action :verify_authenticity_token, if: :json_request?
 
     def index
         render :json => User.all
